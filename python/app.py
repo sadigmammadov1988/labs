@@ -1,4 +1,6 @@
+import time
 i = 1
-while true:
+while True:
   print(i)
   i += 1
+  time.sleep(3)
