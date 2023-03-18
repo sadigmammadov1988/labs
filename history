@@ -1,0 +1,661 @@
+    1  exit
+    2  lab cat /usr/lhistory
+    3  history
+    4  cat /usr/share/bash-completion/completions/lab 
+    5  cat ~/.bashrc 
+    6  helm version
+    7  vi ~/.bashrc
+    8  ssh lab@utility
+    9  exit
+   10  lab --refresh
+   11  exit
+   12  exit
+   13  exit
+   14  exit
+   15  lab-configure
+   16  vim token
+   17  lab-configure 
+   18  git clone https://github.com/sadigmammadov1988/DO288-apps
+   19  ll
+   20  cd DO288-apps/
+   21  ll
+   22  lab build-template start
+   23  cd DO288-apps/
+   24  ll
+   25  cd ..
+   26  ll
+   27  lab build-template start
+   28  oc get pods
+   29  source /usr/local/etc/ocp4.config
+   30  oc login -u ${RHT_OCP4_DEV_USER} \ -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+   31  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+   32  lab build-template start
+   33  cd DO288
+   34  ll
+   35  git init
+   36  git config user.name=Sadig
+   37  git config user.name "Sadig Mammadov"
+   38  git config user.email sadigmammadov1988@gmail.com
+   39  git init
+   40  ll
+   41  git remote add origin git@github.com:sadigmammadov1988/288-labs.git
+   42  git branch 
+   43  git branch -M main
+   44  git branch 
+   45  git checkout 
+   46  git branch deploy-template
+   47  git push -u origin main
+   48  git push
+   49  ll
+   50  ls -a
+   51  rm -rf .git
+   52  git clone https://github.com:sadigmammadov1988/288-labs
+   53  git clone https://github.com/sadigmammadov1988/288-labs
+   54  git clone https://github.com/sadigmammadov1988/labs.git
+   55  ll
+   56  ls -a
+   57  cd labs/
+   58  ll
+   59  git clone https://github.com/sadigmammadov1988/labs.git
+   60  ls -a
+   61  git checkout 
+   62  cp -r build-template labs/
+   63  cd labs/
+   64  ll
+   65  ls -a
+   66  git checkout 
+   67  git checkout main
+   68  git branch 
+   69  git branch template
+   70  git status
+   71  git push
+   72  ll
+   73  git add all
+   74  git add --all
+   75  git commit -a -m "template"
+   76  pit push
+   77  git push
+   78  git branch 
+   79  cd
+   80  lab build-template finish
+   81  cd DO288
+   82  ll
+   83  cd labs/
+   84  ll
+   85  cd labs/
+   86  ll
+   87  lab source-build start
+   88  cd DO288/labs/
+   89  ll
+   90  cp -r source-build labs/
+   91  git add --all
+   92  cd labs/
+   93  ll
+   94  git add --all
+   95  git commin -a -m "added source-build"
+   96  git commit -a -m "added source-build"
+   97  pit push
+   98  git push
+   99  lab source-build start
+  100  history 
+  101  source /usr/local/etc/ocp4.config
+  102  oc login -u ${RHT_OCP4_DEV_USER} \ -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  103  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  104  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  105  clear
+  106  cd DO288-apps/
+  107  ll
+  108  git branch 
+  109  git branch source-build
+  110  git b
+  111  git branch 
+  112  git checkout source-build 
+  113  cd nodejs-helloworld/
+  114  ll
+  115  cd ..
+  116  git commin -a -m "add source build"
+  117  git commit -a -m "add source build"
+  118  git push
+  119  git branch 
+  120  git push
+  121  git push -h
+  122  git push -u 
+  123  git push -u origin source-build 
+  124  echo ${RHT_OCP4_DEV_USER}
+  125  oc new-project ${RHT_OCP4_DEV_USER}-source-build
+  126  oc project
+  127  #oc new-app --name=greet https://github.com/sadigmammadov1988/DO288-apps/nodejs-helloworld#source-build --build-env  npm_config_registry=http://nexus-common.apps.cluster.domain.example.com/repository/nodejs
+  128  echo ${RHT_OCP4_NEXUS_SERVER}
+  129  #oc new-app --name=greet https://github.com/sadigmammadov1988/DO288-apps/nodejs-helloworld#source-build --build-env  npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs
+  130  oc get all
+  131  oc get is
+  132  oc new-app --name=greet nodejs~https://github.com/sadigmammadov1988/DO288-apps/nodejs-helloworld#source-build --build-env  npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs
+  133  oc get pods
+  134  oc get all
+  135  oc logs bc/greet
+  136  oc ge all
+  137  oc get all
+  138  oc delete all -l app=greet
+  139  oc new-app --name=greet nodejs~https://github.com/sadigmammadov1988/DO288-apps#source-build --build-env  npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs --context-dir=nodejs-helloworld
+  140  oc logs -f bc/greet
+  141  oc get pods
+  142  cd nodejs-helloworld/
+  143  ll
+  144  python -h
+  145  python -m json.tool package.json 
+  146  vim package.json 
+  147  python -m json.tool package.json 
+  148  git branch 
+  149  git commit -m "edit json"
+  150  git commit -a -m "edit json"
+  151  pit push
+  152  git push
+  153  #oc start-build greet 
+  154  oc get pods
+  155  oc start-build greet 
+  156  oc get pods
+  157  oc get route
+  158  oc get service
+  159  oc expose service greet
+  160  oc get route
+  161  curl http://greet-developer-source-build.apps.ocp4.example.com
+  162  lab source-build grade
+  163  lab source-build finish
+  164  source /usr/local/etc/ocp4.config
+  165  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  166  lab container-build start
+  167  cd DO288
+  168  ll
+  169  cd labs/
+  170  ll
+  171  cp -r container-build labs
+  172  cd labs/
+  173  ll
+  174  git branch
+  175  git commit -a -m "added container-build"
+  176  git add --all
+  177  git commit -a -m "added container-build"
+  178  git push origin main 
+  179  cd ~
+  180  ll
+  181  cd DO288/labs/container-build/httpd-parent/
+  182  ll
+  183  vim Containerfile 
+  184  cd
+  185  cd DO288-apps/
+  186  ll
+  187  git branch 
+  188  git checkout main
+  189  git checkout -b container-build
+  190  git push -i origin container-build 
+  191  git push -u origin container-build 
+  192  cd container-build/
+  193  ll
+  194  cat Containerfile 
+  195  oc new-project ${RHT_OCP4_DEV_USER}-container-build
+  196  podman build --layers=false -t do288-apache ./Containerfile 
+  197  podman build --layers=false -t do288-apache .
+  198  podman images
+  199  podman tag do288-apache:latest quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  200  podman push --help
+  201  #podman push --format=v2s1 quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  202  podman login quay.io -u ${RHT_OCP4_QUAY_USER}
+  203  podman push --format=v2s1 quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  204  skopeo inspect docker://quay.io/${RHT_OCP4_QUAY_USER}/do288-apach
+  205  skopeo inspect docker://quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  206  oc new-app --name hola quay.io/${RHT_OCP4_QUAY_USER}/do288-apach
+  207  oc new-app --name hola quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  208  oc new-app --name --image=hola quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  209  oc new-app --name=hola --image=quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  210  oc new-app --name=hola quay.io/sadigmammadov1988/do288-apache
+  211  oc get pods
+  212  oc logs hola-66c4b4d858-s8p8t 
+  213  oc delete all -l app=hola
+  214  pwd
+  215  ll
+  216  vom Containerfile 
+  217  vim Containerfile 
+  218  git commit -a -m "Changed the Containerfile to enable running as a random uid on OpenShift"
+  219  git branch
+  220  git push
+  221  podman rm -i all
+  222  podman images
+  223  podman rmi -a --force 
+  224  source /usr/local/etc/ocp4.config
+  225  podman login quay.io -u ${RHT_OCP4_QUAY_USER}
+  226  podman images
+  227  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  228  history 
+  229  cd DO288-apps/
+  230  cd container-build/
+  231  ll
+  232  cat Containerfile 
+  233  history 
+  234  podman build --layers=false -t do288-apache .
+  235  vim Containerfile 
+  236  podman build --layers=false -t do288-apache .
+  237  podman images
+  238  podman tag do288-apache:latest quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  239  podman push --format=v2s1 quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  240  oc new-app --name hola quay.io/${RHT_OCP4_QUAY_USER}/do288-apache
+  241  oc get pods
+  242  oc get svc
+  243  oc expose service hola --port=8080
+  244  oc get route
+  245  curl hola-developer-container-build.apps.ocp4.example.com
+  246  oc delete project ${RHT_OCP4_DEV_USER}-container-build
+  247  lab container-build finish
+  248  cd
+  249  lab container-build finish
+  250  cd DO288-apps/
+  251  git commit -a -m "sdsd"
+  252  pit push
+  253  git push
+  254  lab container-build finish
+  255  history 
+  256  source /usr/local/etc/ocp4.config
+  257  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  258  cd DO288-apps/
+  259  git branch 
+  260  git checkout main 
+  261  git branch -h
+  262  git checkout -b app-config
+  263  cat ~/token 
+  264  git push
+  265  git push --set-upstream origin app-config
+  266  git branch 
+  267  lab app-config start
+  268  cd app-config/
+  269  ll
+  270  vim app.js 
+  271  oc new-project ${RHT_OCP4_DEV_USER}-app-config
+  272  oc new-app --name myapp --build-env npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs nodejs~https://github.com/${RHT_OCP4_GITHUB_USER}/DO288-apps#app-config --context-dir=app-config
+  273  oc get pods
+  274  oc logs bc/myapp
+  275  oc logs -f bc/myapp
+  276  oc get pods
+  277  oc expose service myapp 
+  278  oc get routes.route.openshift.io 
+  279  curl myapp-developer-app-config.apps.ocp4.example.com
+  280  oc create configmap myappconf --from-literal APP_MSG="Test Message"
+  281  oc describe configmaps myappconf 
+  282  ll
+  283  oc create secret generic myappfilesec --from-file=myapp.sec 
+  284  oc set env deployment/myapp --from configmap/myappconf
+  285  oc get pods
+  286  curl myapp-developer-app-config.apps.ocp4.example.com
+  287  oc set volumes deployment/myapp --add --type=secret --secret-name=myappfilesec --mount-path=/opt/app-root/secure --name=myappsec-vol
+  288  oc get pods
+  289  oc get all
+  290  oc get pods
+  291  curl myapp-developer-app-config.apps.ocp4.example.com
+  292  oc delete project \ ${RHT_OCP4_DEV_USER}-app-config
+  293  oc delete project ${RHT_OCP4_DEV_USER}-app-config
+  294  lab app-config finish
+  295  lab design-container start
+  296  source /usr/local/etc/ocp4.config
+  297  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  298  oc new-project developer-design-container
+  299  cd DO288-apps/
+  300  git branch
+  301  git checkout -b design-container
+  302  cd hello-java/
+  303  ll
+  304  cat Containerfile 
+  305  git push
+  306  cat ~/token 
+  307  git push --set-upstream origin design-container
+  308  oc new-app --name=elvis https://github.com/sadigmammadov1988/DO288-apps#design-container --context-dir=hello-java
+  309  oc new-app --name=elvis java~https://github.com/sadigmammadov1988/DO288-apps#design-container --context-dir=hello-java
+  310  ll
+  311  podman build -t elvis .
+  312  podman images
+  313  cat /usr/local/etc/ocp4.config
+  314  podman image tag elvis:latest quay.io/sadigmammadov1988/elvis
+  315  podman images
+  316  podman push quay.io/sadigmammadov1988/elvis
+  317  podman login
+  318  podman login quay.io
+  319  podman push quay.io/sadigmammadov1988/elvis
+  320  oc new-app --name=elvis elvis~https://github.com/sadigmammadov1988/DO288-apps#design-container --context-dir=hello-java
+  321  oc new-app --name=elvis --image=quay.io/sadigmammadov1988/elvis
+  322  oc new-app --name=elvis --image=http://quay.io/sadigmammadov1988/elvis
+  323  oc new-app --name=elvis http://quay.io/sadigmammadov1988/elvis
+  324  podman images
+  325  oc new-app --name=elvis http://quay.io/sadigmammadov1988/elvis:latest
+  326  oc new-app --name=elvis quay.io/sadigmammadov1988/elvis:latest
+  327  oc get all
+  328  oc new-app --name=elvis quay.io/sadigmammadov1988/elvis:latest
+  329  oc get pods
+  330  oc logs elvis-64cd9c-bbx99 
+  331  vim Containerfile 
+  332  git commit -a -m "container file changed"
+  333  git push
+  334  cat ~/token 
+  335  git push
+  336  podman images
+  337  podman build -t quay.io/sadigmammadov1988/elvis:1 .
+  338  #oc new-app --name=elvis quay.io/sadigmammadov1988/elvis:1
+  339  oc delete all -l app=elvis
+  340  oc new-app --name=elvis quay.io/sadigmammadov1988/elvis:1
+  341  podman push quay.io/sadigmammadov1988/elvis:1
+  342  oc new-app --name=elvis quay.io/sadigmammadov1988/elvis:1
+  343  oc get pods
+  344  oc expose svc elvis 
+  345  oc get routes.route.openshift.io 
+  346  curl elvis-developer-design-container.apps.ocp4.example.com
+  347  curl elvis-developer-design-container.apps.ocp4.example.com/api/hello
+  348  oc create configmap appconfig --from-literal=APP_MSG="Elvis lives"
+  349  oc get all
+  350  oc set env deployment/elvis --from configmap/appconfig
+  351  oc get pods
+  352  curl elvis-developer-design-container.apps.ocp4.example.com/api/hello
+  353  lab design-container grade
+  354  oc get pods
+  355  oc logs elvis-6fdb766d9d-ngmt5 
+  356  oc get pods
+  357  lab design-container grade
+  358  lab design-container finish
+  359  source /usr/local/etc/ocp4.config
+  360  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  361  source /usr/local/etc/ocp4.config
+  362  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  363  lab source-build start
+  364  cd DO288-apps/
+  365  git branch 
+  366  git branch main
+  367  git checkout main 
+  368  git branch --delete source-build 
+  369  git branch 
+  370  git checkout -b source-build
+  371  cat ~/token 
+  372  git push
+  373  git push --set-upstream origin source-build
+  374  git branch 
+  375  oc new-project developer-source-build
+  376  cd nodejs-helloworld/
+  377  ll
+  378  oc new-app --help
+  379  oc new-app --name=greet --image-stream=nodejs:16 https://github.com/sadigmammadov1988/DO288-apps#source-build --context-dir=nodejs-helloworld
+  380  oc new-app --name=greet --image-stream=nodejs:16-ubi8 https://github.com/sadigmammadov1988/DO288-apps#source-build --context-dir=nodejs-helloworld
+  381  oc get pods
+  382  oc logs -f greet-1-build 
+  383  oc delete all -l app=greet
+  384  oc new-app --name=greet --image-stream=nodejs:16-ubi8 https://github.com/sadigmammadov1988/DO288-apps#source-build --context-dir=nodejs-helloworld --build-env=npm_config_registry=http://nexus-common.apps.cluster.domain.example.com/repository/nodejs
+  385  oc logs -f greet-1-build 
+  386  ll
+  387  python -m json.tool package.json 
+  388  vim package.json 
+  389  git commit -a -m "json edited"
+  390  git push
+  391  cat ~/token 
+  392  git push
+  393  oc get bc
+  394  oc start-build bc/greet
+  395  oc get all
+  396  oc get pods
+  397  oc logs -f greet-2-build 
+  398  oc get pods
+  399  #oc new-app --name=greet --image-stream=nodejs:16-ubi8 https://github.com/sadigmammadov1988/DO288-apps#source-build --context-dir=nodejs-helloworld --build-env=npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs
+  400  oc delete all -l app=greet
+  401  oc new-app --name=greet --image-stream=nodejs:16-ubi8 https://github.com/sadigmammadov1988/DO288-apps#source-build --context-dir=nodejs-helloworld --build-env=npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/nodejs
+  402  oc get all
+  403  oc logs -f greet-1-build 
+  404  oc get pods
+  405  oc expose svc greet 
+  406  lab source-build grade
+  407  lab source-build finish
+  408  source /usr/local/etc/ocp4.config
+  409  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  410  oc get is
+  411  oc get is -n openshift
+  412  oc get is -n openshift | grep php
+  413  oc get is -n openshift | grep nodejs
+  414  oc get is -n openshift nodejs
+  415  oc describe is -n openshift nodejs
+  416  source /usr/local/etc/ocp4.config
+  417  watch -n 5 oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  418  lab external-registry start
+  419  cd DO288/
+  420  ll
+  421  cd labs/
+  422  ll
+  423  cp -r external-registry labs/
+  424  cd labs/
+  425  history | grep git
+  426  git commit -a -m "external-registry"
+  427  ll
+  428  git add --all
+  429  git push
+  430  git branch 
+  431  pwd
+  432  cd ..
+  433  git branch 
+  434  cd labs/
+  435  git branch 
+  436  git branch external-registry
+  437  git checkout external-registry 
+  438  git push
+  439  git push --set-upstream origin external-registry
+  440  git add --all
+  441  ll
+  442  tree
+  443  git commit -a -m "external-registry"
+  444  git push
+  445  cd ..
+  446  ll
+  447  cd external-registry/
+  448  ll
+  449  ll ubi-sleep/
+  450  podman login -u sadigmammadov1988 quay.io
+  451  skopeo copy --help
+  452  #skopeo copy --format v2s1 oci:
+  453  pwd
+  454  cd ubi-sleep/
+  455  pwd
+  456  skopeo copy --format v2s1 oci:/home/student/DO288/labs/external-registry/ubi-sleep docker://quay.io/sadigmammadov1988/ubi-sleep:1.0
+  457  skopeo inspect docker://quay.io/sadigmammadov1988/ubi-sleep
+  458  skopeo inspect docker://quay.io/sadigmammadov1988/ubi-sleep:1.0
+  459  podman run -d --name ubi-sleep quay.io/sadigmammadov1988/ubi-sleep:1.0
+  460  podman ps
+  461  podman logs -f ubi-sleep
+  462  podman rm -f ubi-sleep 
+  463  podman ps
+  464  oc get all
+  465  oc get pods
+  466  oc new-project external
+  467  oc new-app --name ubi-sleep --image quay.io/sadigmammadov1988/ubi-sleep:1.0
+  468  ll
+  469  cat ${XDG_RUNTIME_DIR}/containers/auth.json
+  470  env
+  471  env | grep -i xgt
+  472  env | grep -i xdg
+  473  oc create secret generic quayio --from-file -h
+  474  oc create secret generic quayio --from-file --help
+  475  oc create secret generic --help
+  476  oc create secret generic --from-file .dockerconfigjson=${XDG_RUNTIME_DIR}/containers/auth.json --type kubernetes.io/dockerconfigjson
+  477  oc create secret generic quayio --from-file .dockerconfigjson=${XDG_RUNTIME_DIR}/containers/auth.json --type kubernetes.io/dockerconfigjson
+  478  oc describe secrets quayio 
+  479  oc secrets link --help
+  480  oc secrets link default quayio --for pull
+  481  oc create secret generic quayio --from-file .dockerconfigjson=${XDG_RUNTIME_DIR}/containers/auth.json --type kubernetes.io/dockerconfigjson
+  482  oc new-app --name ubi-sleep --image quay.io/sadigmammadov1988/ubi-sleep:1.0
+  483  oc get pods
+  484  oc project
+  485  oc delete project external
+  486  oc project
+  487  cd
+  488  lab external-registry finish
+  489  history | grep "oc new-app"
+  490  source /usr/local/etc/ocp4.config
+  491  podman login -u sadigmammadov1988 quay.io
+  492  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  493  clear
+  494  sdsdsd
+  495  s
+  496  oc status
+  497  oc project
+  498  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  499  source /usr/local/etc/ocp4.config
+  500  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  501  lab expose-registry start
+  502  cd DO288
+  503  ll
+  504  cd labs/
+  505  ll
+  506  cd labs/
+  507  git branch 
+  508  git branch expose-registry
+  509  git checkout expose-registry 
+  510  cp -r  ../expose-registry ./
+  511  ll
+  512  git commit -a -m "expose-registry"
+  513  git add --all
+  514  git commit -m "expose-registry"
+  515  git push
+  516  git push --set-upstream origin expose-registry
+  517  cd ..
+  518  cd expose-registry/
+  519  ll
+  520  INTERNAL_REGISTRY=default-route-openshift-image-registry.apps.ocp4.example.com
+  521  oc login -u admin -p redhat
+  522  oc get routes.route.openshift.io -n openshift-image-registry 
+  523  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  524  oc whoami 
+  525  oc whoami -t
+  526  podman login -u developer -p sha256~J0rYM7SudfucMATPymNVc1eptCJ92gczSEmziZrUUpI default-route-openshift-image-registry.apps.ocp4.example.com
+  527  oc new-project test
+  528  cd ubi-info/
+  529  skopeo copy --dest-creds=developer:sha256~J0rYM7SudfucMATPymNVc1eptCJ92gczSEmziZrUUpI --format v2s1 oci:./ docker://default-route-openshift-image-registry.apps.ocp4.example.com/ubi-info:1.0
+  530  skopeo copy --dest-creds=developer:sha256~J0rYM7SudfucMATPymNVc1eptCJ92gczSEmziZrUUpI --format v2s1 oci:./ docker://default-route-openshift-image-registry.apps.ocp4.example.com/test/ubi-info:1.0
+  531  oc get is
+  532  podman pull default-route-openshift-image-registry.apps.ocp4.example.com/test/ubi-info:1.0
+  533  podman run -d --name info default-route-openshift-image-registry.apps.ocp4.example.com/test/ubi-info:1.0
+  534  podman ps
+  535  podman run -d --name info default-route-openshift-image-registry.apps.ocp4.example.com/test/ubi-info:1.0
+  536  podman start info 
+  537  podmsn ps
+  538  podman ps
+  539  podman ps -a
+  540  oc delete is ubi-info 
+  541  podman pull default-route-openshift-image-registry.apps.ocp4.example.com/test/ubi-info:1.0
+  542  oc delete project test
+  543  podman rm info 
+  544  df -h
+  545  ip a
+  546  lab expose-registry finish
+  547  history 
+  548  lab image-stream start
+  549  source /usr/local/etc/ocp4.config
+  550  podman login -u developer -p sha256~J0rYM7SudfucMATPymNVc1eptCJ92gczSEmziZrUUpI default-route-openshift-image-registry.apps.ocp4.example.com
+  551  oc login -u ${RHT_OCP4_DEV_USER} -p ${RHT_OCP4_DEV_PASSWORD} ${RHT_OCP4_MASTER_API}
+  552  lab image-stream start
+  553  cd DO288
+  554  ll
+  555  cd labs/
+  556  ll
+  557  cd labs/
+  558  ll
+  559  cd ..
+  560  ll
+  561  cd labs/
+  562  ll
+  563  oc new-project test
+  564  skopeo inspect docker://quay.io/redhattraining/hello-world-nginx
+  565  oc import-image --help
+  566  oc import-image --confirm --from=quay.io/redhattraining/hello-world-nginx
+  567  oc import-image --confirm --from=quay.io/redhattraining/hello-world-nginx hello-world
+  568  oc get is
+  569  oc get istag
+  570  oc new-project test-is
+  571  oc new-app --name hello -i test/hello-world:latest
+  572  oc project
+  573  oc get pods
+  574  oc logs hello-8fcfb9d4-66sh7 
+  575  oc get sevc
+  576  oc get svc
+  577  oc expose svc hello
+  578  oc get routes.route.openshift.io 
+  579  curl hello-test-is.apps.ocp4.example.com
+  580  oc delete project test
+  581  oc delete project test-is
+  582  lab image-stream finish
+  583  lab expose-image start
+  584  ll
+  585  cd labs
+  586  ll
+  587  git checkout -b expose-image
+  588  cp -r ../expose-image ./
+  589  ll
+  590  git add --all
+  591  cat ~/token 
+  592  git commit -a -m "expose-image"
+  593  git push
+  594  git push --set-upstream origin expose-image 
+  595  podman login quay.io
+  596  skopeo copy --help
+  597  history 
+  598  history | grep skopeo
+  599  clear 
+  600  skopeo copy --help
+  601  ll
+  602  cd ../labs/
+  603  ll
+  604  cd ..
+  605  ll
+  606  cd expose-image/
+  607  ll
+  608  skopeo copy --format v2s1 oci:php-info docker://quay.io/sadigmammadov1988/php-info:latest
+  609  skopeo inspect docker://quay.io/sadigmammadov1988/php-info
+  610  oc create developer-common
+  611  oc new-project developer-common
+  612  env
+  613  ls -a /run/user/1000/
+  614  ls -a /run/user/1000/containers/
+  615  oc create secret generic quayio --from-file=.dockerconfigjson=/run/user/1000/containers/auth.json 
+  616  oc secrets link --help
+  617  oc secrets link default quayio --for-pull
+  618  oc secrets link default quayio --for=pull
+  619  oc import-image --help
+  620  #skopeo inspect docker://quay.io/sadigmammadov1988/php-info
+  621  oc import-image php-info --confirm --reference-policy=local docker://quay.io/sadigmammadov1988/php-info
+  622  oc import-image php-info --confirm --reference-policy=local from=quay.io/sadigmammadov1988/php-info
+  623  oc import-image php-info --confirm --reference-policy=local from=quay.io/sadigmammadov1988/php-info:latest
+  624  oc delete secrets quayio 
+  625  oc create secret generic quayio --from-file=.dockerconfigjson=/run/user/1000/containers/auth.json --type kubernetes.io/dockerconfigjson
+  626  oc secrets link --help
+  627  oc secrets link default quayio --for pull
+  628  oc import-image --confirm --reference-policy local php-info --from quay.io/sadigmammadov1988/php-info
+  629  oc import-image --confirm --reference-policy local php-info --from=quay.io/sadigmammadov1988/php-info
+  630  oc import-image --confirm --reference-policy local php-info --from=quay.io/sadigmammadov1988/php-info:latest
+  631  oc get is
+  632  oc delete is php-info 
+  633  oc import-image --confirm --reference-policy local php-info --from=quay.io/sadigmammadov1988/php-info:latest
+  634  oc get is
+  635  oc new-project developer-expose-image
+  636  oc new-app --name info -i developer-common/php-info
+  637  oc get pods
+  638  oc logs info-559486b964-5jmbc 
+  639  oc describe deployment info 
+  640  history 
+  641  oc project developer-common
+  642  oc adm policy add-role-to-user system:image-puller system:serviceaccount:developer-expose-image:default
+  643  oc project developer-expose-image
+  644  oc get pods
+  645  oc delete pod info-559486b964-5jmbc 
+  646  oc delete pod info-559486b964-5jmbc --force 
+  647  oc get pods
+  648  oc get svc
+  649  oc expose svc info 
+  650  oc get route
+  651  curl info-developer-expose-image.apps.ocp4.example.com
+  652  lab expose-image finish
+  653  cd ..
+  654  ll
+  655  cd ..
+  656  ll
+  657  cd labs/
+  658  ll
+  659  cd labs/
+  660  ll
+  661  history > history
